@@ -103,10 +103,46 @@ main.main()
 MIT
 EOF
 
+# create pyproject.toml file
+
+cat > "pyproject.toml" << EOF
+[build-system]
+requires = ["setuptools>=42", "wheels"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "$PROJECT_NAME"
+version = "0.1.0"
+description = "Creates a Professional Python Project"
+readme = "README.md"
+authors = [{name = "Paul Maposa", email = "paul.maposa@gmail.com"}]
+licence = {text = "MIT"}
+classifiers = [
+           "Programming Language :: Python :: 3",
+           "Licence :: OSI Approved :: MIT Licence",
+
+           ]
+requires-python = ">=3.8"
+dependencies = [
+      # Add your dependencies here
+ ]
+      
+[project.optional-dependencies]
+
+dev = [
+
+       "pytest>=7.0",
+       
+  ]
+  
+[tool-setuptools]
+package-dir = {""="src"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
 
 
-
- 
   
           
   
