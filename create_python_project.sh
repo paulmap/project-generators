@@ -141,28 +141,4 @@ package-dir = {""="src"}
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
-
-
-  
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-
-
-
+EOF
