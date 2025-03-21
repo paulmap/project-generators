@@ -39,7 +39,6 @@ cat > "src/main.py" << EOF
 
 """
    Main entry point for project "$PROJECT_NAME".
-
 """
 def main():
     """Execute the main program."""
@@ -57,7 +56,6 @@ cat > "tests/test_main.py" << EOF
 
 """00
    Tests for the main module.
-
 """
 
 import pytest
